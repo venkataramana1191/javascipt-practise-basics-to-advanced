@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Day2 Js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <h2>1.Program to search for a particular character in a string</h2>
+    <p id="demo"></p>
+    <br>
+    <h2>2.Program to convert minutes to seconds output</h2>
+    <p id="seconds"></p>
+    <br>
+    <h2>3.Program to search for a element in a array of strings</h2>
+    <p id ="searchName"></p>
+    <br>
+    <h2>4.Program to display only elements containing 'a' in them from a array</h2>
+    <p id="searchaword"></p>
+    <br>
+    <h2>5.Print an array [1,2,3,4] in reverse order</h2>
+    <p id="reverse"></p>
+    <script>
+    //Program to search for a particular character in a string
+var name ='Lets Upgrade'
+var searchLetter= prompt('Enter a letter to search from word "Lets Upgrade" ');
+var n=name.indexOf(searchLetter);
+var data1=`The searching Letter '${searchLetter}' present at index:${n} in the word "${name}"`
+document.getElementById('demo').innerHTML=data1;
+console.log(data1);
+//Program to convert minutes to seconds 
+
+var minute=prompt("Enter Minutes to converts in Seconds");
+
+var convertedSeconds = minute*60;
+var data=`given minutes are ${minute} and converted in ${convertedSeconds} seconds`;
+document.getElementById('seconds').innerHTML=data;
+console.log(data)
+
+//Program to search for a element in a array of strings
+var names=['letsUpgrade','javascript','aws','python']
+
+var searchName= prompt("search element  among 'letsUpgrade','javascript','aws','python' ");
+var i=names.indexOf(searchName);
+var data3=`given word '${searchName}' presented at index : ${i} in the array of elements [ ${names} ]`
+
+document.getElementById('searchName').innerHTML=data3;
+console.log(data3)
+
+//4.Program to display only elements containing 'a' in them from a array
+
+var data=['letsUpgrade','javascript','aws','python','venkat','koti']
+var data4=[]
+
+for(let element of data){
+
+    if(element.search('a')>0)
+      // return element;
+      data4.push(element);
+}
+console.log("Words which are contains 'a' are:",data4);
+document.getElementById('searchaword').innerHTML=data4;
+
+//5.Print an array in reverse order
+var arr=[1,2,3,4];
+   var data5=arr.reverse();
+   
+ document.getElementById('reverse').innerHTML=data5;
+   console.log(data5);
+</script>
+  </body>
+</html>
