@@ -10,19 +10,64 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
+    <style>
+    body {
+     background-color: lightblue;
+     text-align: center;
+    }
+    .taskDescription h3,p{
+      text-align: left;
+    }
+    p {
+     font-family: verdana;
+     font-size: 20px;
+    }
+</style>
   </head>
   <body>
     <h1>Day 4 Assignment</h1>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <!-- <div>
     <p class="name">Durga<p>
     <p class="name">prasad<p>
     <p class="person" id="pname">venkat<p>
      <button onclick="doSomething()">Click Me</button>
-     <img src="https://3.bp.blogspot.com/-RgRq4imEpOI/WacIKXOJP4I/AAAAAAAABBw/DX3evXQtQTUAvZluPC2UEEHE0jq6VeWMwCEwYBhgL/s1600/IMG_20170829_211128.jpg" alt="venkatTeam" id="image"width="300px">
-    <button onclick="changeImage()">changeImage</button><br>
-    <input type="text" value="" class="inputClass">
+    </div> -->
+     <br>
+  <div>
+    <h2>Task 1</h2>
+   
+      <img src="https://3.bp.blogspot.com/-RgRq4imEpOI/WacIKXOJP4I/AAAAAAAABBw/DX3evXQtQTUAvZluPC2UEEHE0jq6VeWMwCEwYBhgL/s1600/IMG_20170829_211128.jpg" alt="venkatTeam" id="image"width="400px" height="300px">
+    <br>
+      
+     <button onclick="defaultImage()">previousImage</button>
+     <button onclick="changeImage()">changeImage</button>
+     <button onclick="changeImage1()">changeImageAgain</button>
+  </div>
+  
+  <br>
+    <div>
+      <h2>Task 2</h2>
+      <br>
+    <input type="text" value="" class="input" id="original">
+    <input type="text" name="" class="input" id="copy" value="" placeholder="copied text" >
     <button type="submit" onclick="getName()" id="gname">Enter</button>
     <script src="./day4.js" async defer></script>
+  </div>
+  <div>
+    <h2>Task 3</h2>
+    <p>for result see the console</p>
+  </div>
+  <div>
+      <h2>Task 4</h2>
+      <div class="taskDescription">
+      <h3>To see the result call the functions :</h3>
+      <p>
+         <strong>ageLessthan30(persons)</strong> : to display all the objects having age less than 30 <br>
+         <strong> countryIndia(persons)</strong> : to display all the objects having country India <br>
+      </p>
+    </div>
+    </div>
   </body>
